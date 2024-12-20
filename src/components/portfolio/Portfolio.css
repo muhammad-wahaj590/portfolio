@@ -1,0 +1,126 @@
+/* .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0.7;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-primary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 2rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.4rem;
+    margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--color-bg);
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+ */
+
+
+ .portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+ }
+
+ .portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+ }
+
+ .portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+ }
+
+ .portfolio__item-image img {
+    width: 100%; /* Ensure the image takes up full width */
+    border-radius: 1.5rem; /* Match border-radius to the parent container */
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in; /* Add transition for transform and opacity */
+    opacity: 0.7; /* Set initial opacity */
+}
+
+.portfolio__item-image:hover img {
+    transform: scale(1.1); /* Scale up the image */
+    opacity: 1; /* Change opacity on hover */
+}
+
+
+ .portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+ }
+
+ .portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+ }
+
+ @media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+ }
+ 
