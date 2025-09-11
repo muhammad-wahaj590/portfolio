@@ -6,122 +6,55 @@ import 'aos/dist/aos.css';
 
 function Experience() {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // Initialize AOS with animation duration
-  })
+    AOS.init({ duration: 1200 });
+  }, []);
+
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      skills: ["JavaScript (ES6+)", "TypeScript", "Java (Beginner)", "Python (Beginner)"]
+    },
+    {
+      title: "Frontend Development",
+      skills: ["React.js", "Next.js", "Redux", "Redux Toolkit", "React Query", "Context API", "Axios", "Vite", "WebRTC"]
+    },
+    {
+      title: "UI / UX",
+      skills: ["HTML5", "CSS3", "Material-UI", "Tailwind CSS", "Bootstrap", "Shadcn", "Styled Components", "Responsive Web Design", "Cross-Browser Compatibility"]
+    },
+    {
+      title: "Backend Development",
+      skills: ["Node.js", "Express.js", "Middleware (Auth)", "REST APIs", "JWT", "Passport.js", "Backend Architecture & Design", "CORS Configuration", "Socket.IO"]
+    },
+    {
+      title: "Databases & ORMs",
+      skills: ["MongoDB", "Mongoose", "PostgreSQL", "Firebase", "Supabase", "Prisma"]
+    },
+    {
+      title: "Version Control & Tools",
+      skills: ["Git", "GitHub", "npm", "Postman (API Testing)", "Docker"]
+    },
+  ];
+
   return (
     <section id='experience'>
       <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h2>My Skills</h2>
 
       <div className="container experience__container" data-aos="zoom-in">
-        <div className="experience__frontend">
-            <h3>FRONTEND EXPERIENCE</h3>
+        {skillCategories.map((category, index) => (
+          <div key={index} className="experience__card">
+            <h3>{category.title}</h3>
             <div className="experience__content">
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>HTML5</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>CSS3</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>JavaScript</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>React JS</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>Redux</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>Tailwind</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>Bootstrap</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>Material UI</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
+              {category.skills.map((skill, i) => (
+                <article key={i} className="experience__details">
+                  <FaCheck className='experience__details-icon'/>
+                  <h4>{skill}</h4>
+                </article>
+              ))}
             </div>
-        </div>
-        <div className="experience__backend">
-        <h3>OTHER EXPERIENCE</h3>
-            <div className="experience__content">
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>DSA</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>OOP</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>Version Control</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>Firebase</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>SQL</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-              <article className="experience__details">
-                <FaCheck className='experience__details-icon'/>
-                  <div>
-                  <h4>APIs</h4>
-                  <small className='text-light'>Experienced</small>
-                  </div>
-              </article>
-            </div>
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   )

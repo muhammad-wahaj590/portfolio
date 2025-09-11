@@ -21,7 +21,7 @@ function About() {
       <h2>About Me</h2>
 
       <div className="container about__container" data-aos="fade-up"
-     data-aos-duration="3000">
+        data-aos-duration="3000">
         <div className="about__me" >
           <div className="about__me-image">
             <img src={ME} alt="me" />
@@ -31,23 +31,25 @@ function About() {
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
-              <FaAward className='about__icon'/>
+              <FaAward className='about__icon' />
               <h5>Experience</h5>
               <small>1+ Year Working</small>
             </article>
             <article className="about__card">
-              <FaUsers className='about__icon'/>
+              <FaUsers className='about__icon' />
               <h5>Client</h5>
               <small>10+ Worldwide</small>
             </article>
             <article className="about__card">
-              <GrProjects className='about__icon'/>
+              <GrProjects className='about__icon' />
               <h5>Projects</h5>
               <small>20+ completed</small>
             </article>
           </div>
 
-          <p>I'm a Computer Science student at UBIT - KU with a passion for creating innovative and logical solutions. I believe good programming is about crafting code that's both creative and efficient. As a frontend developer, I've worked on complex websites, excelling in design and functionality. My journey started with a simple "Hello World!" and since then, I strive to push my skills beyond my comfort zone.</p>
+          <p>I am a Final-year Computer Science student and Full Stack Developer with experience in building scalable web applications. I have worked on several real-world projects, developing 100+ APIs, integrating real-time communication, and implementing cloud deployments with secure authentication.
+
+            Passionate about creating products that combine intuitive design with robust architecture, I thrive in fast-paced environments where I can solve problems, adapt quickly, and deliver impactful solutions.</p>
 
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>

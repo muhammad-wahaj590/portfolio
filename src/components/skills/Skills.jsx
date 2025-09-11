@@ -76,35 +76,35 @@ function Skills() {
         <div className="technical-skills">
           <h3>Technical Skills</h3>
           <div className="skill">
-            <span>HTML <IoLogoHtml5 /></span>
+            <span>Frontend</span>
             <div className="skill-bar">
               <div className="skill-bar-fill" data-percentage="90"></div>
               <span className="skill-percent">90%</span>
             </div>
           </div>
           <div className="skill">
-            <span>CSS <FaCss3Alt /></span>
+            <span>Backend</span>
             <div className="skill-bar">
-              <div className="skill-bar-fill" data-percentage="80"></div>
+              <div className="skill-bar-fill" data-percentage="85"></div>
               <span className="skill-percent">85%</span>
             </div>
           </div>
           <div className="skill">
-            <span>JavaScript <IoLogoJavascript /></span>
+            <span>Databases</span>
             <div className="skill-bar">
-              <div className="skill-bar-fill" data-percentage="75"></div>
+              <div className="skill-bar-fill" data-percentage="85"></div>
               <span className="skill-percent">85%</span>
             </div>
           </div>
           <div className="skill">
-            <span>Python <FaPython /></span>
+            <span>JavaScript / TypeScript </span>
             <div className="skill-bar">
-              <div className="skill-bar-fill" data-percentage="30"></div>
-              <span className="skill-percent">30%</span>
+              <div className="skill-bar-fill" data-percentage="85"></div>
+              <span className="skill-percent">85%</span>
             </div>
           </div>
           <div className="skill">
-            <span>React <FaReact /></span>
+            <span>DevOps & Deployment</span>
             <div className="skill-bar">
               <div className="skill-bar-fill" data-percentage="75"></div>
               <span className="skill-percent">75%</span>
@@ -121,23 +121,7 @@ function Skills() {
                     <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
                     <circle className='path path-1' cx="100" cy="100" r="80"></circle>
                 </svg>
-                <div className="percentage">80%</div>                
-                <div className="text">Creativity</div>
-            </div>
-            <div className="radial-bar">
-                <svg x='0px' y='0px' viewBox="0 0 200 200">
-                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle className='path path-1' cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div className="percentage">90%</div>                
-                <div className="text">Communication</div>
-            </div>
-            <div className="radial-bar">
-                <svg x='0px' y='0px' viewBox="0 0 200 200">
-                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle className='path path-1' cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div className="percentage">70%</div>                
+                <div className="percentage">85%</div>                
                 <div className="text">Problem Solving</div>
             </div>
             <div className="radial-bar">
@@ -145,8 +129,24 @@ function Skills() {
                     <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
                     <circle className='path path-1' cx="100" cy="100" r="80"></circle>
                 </svg>
-                <div className="percentage">100%</div>                
-                <div className="text">Teamworking</div>
+                <div className="percentage">85%</div>                
+                <div className="text">Communication</div>
+            </div>
+            <div className="radial-bar">
+                <svg x='0px' y='0px' viewBox="0 0 200 200">
+                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle className='path path-1' cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div className="percentage">85%</div>                
+                <div className="text">Adaptability </div>
+            </div>
+            <div className="radial-bar">
+                <svg x='0px' y='0px' viewBox="0 0 200 200">
+                    <circle className="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle className='path path-1' cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div className="percentage">90%</div>                
+                <div className="text">Teamwork</div>
             </div>
           </div>
         </div>
