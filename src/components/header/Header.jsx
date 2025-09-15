@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './Header.css'
 import CTA from './CTA'
-import Me from '../../assets/images/wahaj2-removebg.png'
+import Me from '../../assets/images/wahaj11-fotor-bg-remover-2025091522759-fotor-bg-remover-2025091523452.png'
 import HeaderSocial from './HeaderSocial'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

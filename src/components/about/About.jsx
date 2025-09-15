@@ -4,7 +4,7 @@ import './About.css'
 import { FaAward } from "react-icons/fa6";
 import { FaUsers } from "react-icons/fa";
 import { GrProjects } from "react-icons/gr";
-import ME from '../../assets/images/wahaj2-removebg.png'
+import ME from '../../assets/images/wahaj-portfolio-pic.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
